@@ -101,9 +101,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-export PATH="/home/setsal/.local/bin:/usr/local/bro/bin:/usr/local/go/bin:$PATH"
+export PATH="/home/setsal/.local/bin:/home/setsal/.yarn/bin:/usr/local/bro/bin:/usr/local/go/bin:$PATH"
 
-function mkdircd(){
+function mkcd(){
     mkdir -p "$@" && eval cd "\"\$$#\"";
 }
 
@@ -117,3 +117,10 @@ alias ..5="cd ../../../../.."
 
 # alises thefuck
 eval $(thefuck --alias)
+
+
+# key to fix the 
+# Home
+bindkey '\e[1~' beginning-of-line
+# End
+bindkey '\e[4~' end-of-line
