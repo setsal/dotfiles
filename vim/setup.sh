@@ -8,7 +8,7 @@ if [ -e ~/.vim/autoload/plug.vim ];
 then
         echo "[INFO] Vim-plug have been installed!"
 else
-        echo "[INFO] Install the vim-plug for manger plugin"
+        echo "[INFO] Install the vim-plug to mange ths plugin"
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
                 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi

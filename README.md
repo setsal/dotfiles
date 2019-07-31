@@ -1,5 +1,5 @@
 # dotfile
-my dotfile~
+My dotfile~
 
 ## Getting Start
 
@@ -17,7 +17,16 @@ cd dotfile/vim
 sh setup.sh
 ```
 
+### Setup Tmux 
+Just use the soft link to link to `~/.tmux.conf`
+```
+ln -s dotfiles/tmux/.tmux.conf ~/.tmux.conf
+```
 
-### Setup Tmux & Zsh
+### Setup Zsh
 
-for future todo~
+I use [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)  to manage my zsh configure, plugins and themes. :P
+
+The theme is [spaceship](https://github.com/denysdovhan/spaceship-prompt)
+
+**Auto install script is todo :P**
