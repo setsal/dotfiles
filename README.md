@@ -21,9 +21,10 @@ sh setup.sh
 Just use the soft link to link to `~/.tmux.conf`
 
 Really Thanks for the awesome tmux config from [gpakosz](https://github.com/gpakosz/.tmux)
-```
-ln -s dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
+```
+cd dotfile/tmux
+sh setup.sh
 ```
 
 ### Setup Zsh
