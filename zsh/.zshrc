@@ -101,7 +101,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-export PATH="/home/setsal/.local/bin:/home/setsal/.yarn/bin:/usr/local/bro/bin:/usr/local/go/bin:$PATH"
+export PATH="/home/setsal/.local/bin:/home/setsal/.yarn/bin:/usr/local/bro/bin:/usr/local/go/bin:/home/setsal/tools/emsdk:/home/setsal/tools/emsdk/node/12.9.1_64bit/bin:/home/setsal/tools/emsdk/upstream/emscripten:$PATH"
 
 function mkcd(){
     mkdir -p "$@" && eval cd "\"\$$#\"";
