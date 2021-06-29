@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/setsal/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -94,14 +94,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-source "/home/setsal/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-export PATH="/home/setsal/.local/bin:/home/setsal/.yarn/bin:/usr/local/bro/bin:/usr/local/go/bin:/home/setsal/go/bin:/home/setsal/tools/emsdk:/home/setsal/tools/emsdk/node/12.9.1_64bit/bin:/home/setsal/tools/emsdk/upstream/emscripten:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:/usr/local/bro/bin:/usr/local/go/bin:$HOME/go/bin:/home/setsal/tools/emsdk:/home/setsal/tools/emsdk/node/12.9.1_64bit/bin:/home/setsal/tools/emsdk/upstream/emscripten:$PATH"
 
 function mkcd(){
     mkdir -p "$@" && eval cd "\"\$$#\"";
