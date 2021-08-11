@@ -39,7 +39,7 @@ Plug 'vim-tw/vimcdoc-tw'
 
 " deoplete related plugins
 Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+" Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
