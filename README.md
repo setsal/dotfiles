@@ -1,36 +1,28 @@
 # dotfile
 My dotfile~
 
-## Getting Start
+## Getting Started
 
-### Install
-```
+### Installation
+```bash
 git clone https://github.com/setsal/dotfiles.git
+cd dotfiles
 ```
 
-### Setup Vim
+### Usage
+Run the setup script to start the installation process.
 
-I use [vim-plug](https://github.com/junegunn/vim-plug) to manage vim plugins
-
-```
-cd dotfile/vim
-sh setup.sh
-```
-
-### Setup Tmux 
-Just use the soft link to link to `~/.tmux.conf`
-
-Really Thanks for the awesome tmux config from [gpakosz](https://github.com/gpakosz/.tmux)
-
-```
-cd dotfile/tmux
-sh setup.sh
+**Default Installation (bash, zsh, tmux)**
+To run the default setup, which installs configurations for `bash`, `zsh`, and `tmux`, run the script without any arguments:
+```bash
+bash setup.sh
 ```
 
-### Setup Zsh
+**Interactive Installation**
+To choose which components to install, run the script with any argument (e.g., `interactive`):
+```bash
+bash setup.sh interactive
+```
+This will open an interactive menu where you can choose to install all configurations at once or select individual components like `bash`, `zsh`, `tmux`, and `vim`.
 
-I use [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)  to manage my zsh configure, plugins and themes. :P
-
-The theme is [spaceship](https://github.com/denysdovhan/spaceship-prompt)
-
-**Auto install script is todo :P**
+The script will automatically back up any existing dotfiles before creating new symlinks.
